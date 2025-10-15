@@ -8,8 +8,8 @@ import os
 # -----------------------------
 # File paths
 # -----------------------------
-MODEL_PATH = r"C:\Users\ABC\Desktop\fish-classification\fish_classification_model.keras"
-LABELS_PATH = r"C:\Users\ABC\Desktop\fish-classification\class_labels .pkl"
+MODEL_PATH = "fish_classification_model.keras"
+LABELS_PATH = "class_lables.pkl"
 
 # -----------------------------
 # Load model
@@ -81,3 +81,4 @@ if uploaded_file:
             st.write(f"**Confidence:** {confidence:.2f}")
         except Exception as e:
             st.error(f"❌ Prediction failed: {e}")
+
